@@ -1,0 +1,175 @@
+/* Reset padrão */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+/* Formulário */
+form {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    margin: 0 auto; /* Centraliza o botão */
+}
+
+/* Entradas de texto */
+input[type="text"],
+textarea {
+    padding: 7.5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%;
+    margin-bottom: 10px;
+   
+}
+
+/* Botão Criar */
+#btnCriar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0E7C7B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto; /* Centraliza o botão */
+}
+
+#btnCriar:hover {
+    background-color: #0B5E5D;
+}
+
+/* Lista de Filmes */
+#listaFilmes li {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#listaFilmes li img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #0E7C7B;
+}
+
+#listaFilmes li button {
+    background-color: #F4F4F4;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#listaFilmes li button:hover {
+    background-color: #ddd;
+}
+#listaFilmes li button.edit-button {
+    margin-right: 10px; /* Adiciona uma margem à direita do botão "Editar" */
+}
+
+/* Comentários */
+.comment {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.comment p {
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.comment .comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comment .comment-header span {
+    font-weight: bold;
+}
+
+.comment .stars-display {
+    font-size: 14px;
+    color: gold;
+}
+
+.comment .comment-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.comment button {
+    background-color: #F4F4F4;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.comment button:hover {
+    background-color: #ddd;
+}
+
+/* Pop-up de feedback */
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.popup.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Estrelas ativas para avaliações */
+.star.active {
+    color: yellow;
+}
+
+
+
